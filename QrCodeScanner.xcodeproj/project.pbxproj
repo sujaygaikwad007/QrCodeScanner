@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1F4E52EE2C2E83EA00610AB3 /* QrCodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E52ED2C2E83EA00610AB3 /* QrCodeScannerApp.swift */; };
-		1F4E52F02C2E83EA00610AB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E52EF2C2E83EA00610AB3 /* ContentView.swift */; };
 		1F4E52F22C2E83EE00610AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E52F12C2E83EE00610AB3 /* Assets.xcassets */; };
 		1F4E52F52C2E83EE00610AB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E52F42C2E83EE00610AB3 /* Preview Assets.xcassets */; };
+		1F4E52FD2C2E846B00610AB3 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E52FC2C2E846B00610AB3 /* ScannerView.swift */; };
+		1F4E52FF2C2E935D00610AB3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E52FE2C2E935C00610AB3 /* CameraView.swift */; };
+		1F4E53022C2E99D100610AB3 /* CameraPermisson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E53012C2E99D100610AB3 /* CameraPermisson.swift */; };
+		1FDCFD522C2EA6220050CE88 /* QRscannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCFD512C2EA6220050CE88 /* QRscannerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F4E52EA2C2E83EA00610AB3 /* QrCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QrCodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4E52ED2C2E83EA00610AB3 /* QrCodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerApp.swift; sourceTree = "<group>"; };
-		1F4E52EF2C2E83EA00610AB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F4E52F12C2E83EE00610AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4E52F42C2E83EE00610AB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F4E52FC2C2E846B00610AB3 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		1F4E52FE2C2E935C00610AB3 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		1F4E53012C2E99D100610AB3 /* CameraPermisson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermisson.swift; sourceTree = "<group>"; };
+		1FDCFD512C2EA6220050CE88 /* QRscannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRscannerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,9 @@
 		1F4E52EC2C2E83EA00610AB3 /* QrCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				1F4E53002C2E99B700610AB3 /* Models */,
+				1F4E52FB2C2E843600610AB3 /* Views */,
 				1F4E52ED2C2E83EA00610AB3 /* QrCodeScannerApp.swift */,
-				1F4E52EF2C2E83EA00610AB3 /* ContentView.swift */,
 				1F4E52F12C2E83EE00610AB3 /* Assets.xcassets */,
 				1F4E52F32C2E83EE00610AB3 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				1F4E52F42C2E83EE00610AB3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F4E52FB2C2E843600610AB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E52FC2C2E846B00610AB3 /* ScannerView.swift */,
+				1F4E52FE2C2E935C00610AB3 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F4E53002C2E99B700610AB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E53012C2E99D100610AB3 /* CameraPermisson.swift */,
+				1FDCFD512C2EA6220050CE88 /* QRscannerDelegate.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F4E52F02C2E83EA00610AB3 /* ContentView.swift in Sources */,
+				1F4E52FD2C2E846B00610AB3 /* ScannerView.swift in Sources */,
+				1F4E53022C2E99D100610AB3 /* CameraPermisson.swift in Sources */,
+				1FDCFD522C2EA6220050CE88 /* QRscannerDelegate.swift in Sources */,
 				1F4E52EE2C2E83EA00610AB3 /* QrCodeScannerApp.swift in Sources */,
+				1F4E52FF2C2E935D00610AB3 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +297,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QrCodeScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = RYNS47QW35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,8 +328,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QrCodeScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = RYNS47QW35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
